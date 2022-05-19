@@ -1,0 +1,23 @@
+roadTrip
+{
+    
+    while (index <=n)
+    {
+        bool found= false;
+
+        while (found =false)
+        {//loops and refreshes choice until distance exceeds d, therefore chooses mas distance while still being less than d
+            if (x[index]>d&&index==n+1)
+                found = true;
+                break;
+            else
+            {
+                choice = index;
+
+                index++;
+            }
+        }
+
+        print choice;
+    }
+}
